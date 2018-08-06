@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.icta.pdtpapp.contactsbackup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/knh"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyBookings"
+            android:label="@string/title_activity_my_bookings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookingDetails"
+            android:label="@string/title_activity_booking_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Clinicavailabity"
+            android:label="@string/title_activity_clinicavailabity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Signin" />
+        <activity
+            android:name=".Clinicslist"
+            android:label="@string/title_activity_clinicslist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookClinic"
+            android:label="@string/title_activity_book_clinic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SampleData"></activity>
+    </application>
+
+</manifest>
